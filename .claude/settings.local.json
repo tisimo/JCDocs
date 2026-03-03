@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import PyPDF2; r=PyPDF2.PdfReader\\(open\\(''c:/Users/TiagoSilva/WebstormProjects/JCDocs/docs/docspedro.pdf'',''rb''\\)\\); print\\(''Total pages:'', len\\(r.pages\\)\\)\")"
+    ]
+  }
+}
