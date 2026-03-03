@@ -1,0 +1,21 @@
+@startuml UC_CauseManagement
+
+left to right direction
+
+actor "Admin" as admin
+actor "Compliance\nOfficer" as compliance
+
+rectangle "Cause Management" {
+    usecase "Review and approve causes" as UC01
+    usecase "Review reported causes" as UC06
+    usecase "Review edits to published causes" as UC08
+    usecase "Block fraudulent causes" as UC10
+}
+
+admin --> UC01
+admin --> UC06
+admin --> UC08
+admin --> UC10
+compliance --> UC10
+
+@enduml

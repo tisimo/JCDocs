@@ -1,0 +1,21 @@
+@startuml UC_UserPlatform
+
+left to right direction
+
+actor "Admin" as admin
+
+rectangle "User & Platform Management" {
+    usecase "Review KYC submissions" as UC02
+    usecase "View platform analytics" as UC03
+    usecase "Review withdrawal requests" as UC05
+    usecase "Manage cause categories" as UC07
+    usecase "Search and view user profiles" as UC13
+}
+
+admin --> UC02
+admin --> UC03
+admin --> UC05
+admin --> UC07
+admin --> UC13
+
+@enduml

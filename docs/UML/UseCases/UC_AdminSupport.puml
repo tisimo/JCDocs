@@ -1,0 +1,26 @@
+@startuml UC_AdminSupport
+
+left to right direction
+
+actor "Admin" as admin
+actor "Super\nAdmin" as superAdmin
+actor "Support\nStaff" as support
+
+rectangle "Administration & Support" {
+    usecase "Shared backoffice login" as UC15
+    usecase "Manage emails and respond to users" as UC11
+    usecase "Escalate support tickets" as UC09
+    usecase "Create admin users and assign roles" as UC12
+    usecase "Define roles and configure permissions" as UC14
+}
+
+admin --> UC15
+admin --> UC11
+superAdmin --> UC15
+superAdmin --> UC12
+superAdmin --> UC14
+support --> UC15
+support --> UC11
+support --> UC09
+
+@enduml
